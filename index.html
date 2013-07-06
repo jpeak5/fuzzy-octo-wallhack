@@ -30,9 +30,7 @@
                 
         
             dataSource = new Y.DataSource.Get({ 
-                source: url,
-                query:  query
-                });
+                source: url});
         
             dataSource.plug(Y.Plugin.DataSourceJSONSchema, {
                 schema: {

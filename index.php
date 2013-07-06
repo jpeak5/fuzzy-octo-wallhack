@@ -6,7 +6,10 @@ $o->name = 'entergy';
 $o->date = '04/10/2013';
 $o->amt  = 98.24;
 
-echo json_encode($o);
+$cb = isset($_GET['callback']) ? isset($_GET['callback']) : false;
+
+
+echo $cb ?  $cb."(".json_encode($o).")" : json_encode($o);
 
 
 ?>
