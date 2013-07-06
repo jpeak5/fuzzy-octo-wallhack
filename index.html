@@ -28,7 +28,10 @@
                 dataSource,
                 table;
         
-            dataSource = new Y.DataSource.Get({ source: url });
+            dataSource = new Y.DataSource.Get({ 
+                source: url,
+                query:  "q=what"
+                });
         
             dataSource.plug(Y.Plugin.DataSourceJSONSchema, {
                 schema: {
