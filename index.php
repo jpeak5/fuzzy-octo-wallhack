@@ -1,4 +1,5 @@
 <?php
+header('Content-type: text/javascript');
 
 $o = new stdClass();
 $o->name = 'entergy';
