@@ -24,12 +24,14 @@
         YUI().use("datatable", "datasource-get", "datasource-jsonschema", "datatable-datasource", function (Y) {
         
             var url = "http://piquage.net/octo/index.php",
+                query = "q=what",
                 dataSource,
                 table;
+                
         
             dataSource = new Y.DataSource.Get({ 
                 source: url,
-                query:  "q=what"
+                query:  query
                 });
         
             dataSource.plug(Y.Plugin.DataSourceJSONSchema, {
