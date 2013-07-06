@@ -1,5 +1,5 @@
 <?php
-header('Content-type: text/javascript');
+header('Content-type: application/json');
 
 $o = new stdClass();
 $o->name = 'entergy';
